@@ -1,29 +1,42 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <link rel="stylesheet" href="./styles/reset.css" type="text/css">
-    <link rel="stylesheet" href="./styles/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Home</title>
+    <title>PHP</title>
 </head>
 
 <body>
-    <?php include('header.php'); ?>
+    <?php
+    echo "<h1>Hello world!</h1>";
+    echo "<p> Text</p>";
+    $a = 0.5;
+    $b = "0.5";
+    $c = $a + floatval($b);
+    echo $c;
 
-    <main>
-        <section>
-            <h1>Welcome to MindfulCare</h1>
-            <p> Nowadays Our company represent a deal with high kvalification specialist the level whos are is garanteed a best level. Information about them you can find on page Psycholigists. Our service is garanteed:
-            </p>
-            <ul>
-                <li>Good connection with you and Psycholigists</li>
-                <li>Small comission</li>
-                <li></li>
-            </ul>
-        </section>
-    </main>
 
-    <?php include('footer.php'); ?>
+    $firstVariavle = 25;
+    $secondVariable = 12;
+    $world = "FEL SIT students";
+    for ($i = 0; $i < $firstVariavle + $secondVariable; $i++) {
+        echo "<h1>Hello $world</h1> $i iteration";
+    }
+    // define("MY_CYCLE", 10);
+    // $myOutput = " ";
+    // for ($i = 0; $i < "MY_CYCLE"; $i++) {
+    //     $myOutput = $myOutput . $i;
+    // }
+    // echo $myOutput;
+    $cisla = ["100", "90", "80", "70", "60", "50", "40", "30", "20", "10"];
+    foreach ($cisla as &$cislo) {
+        if ($cislo > "50") {
+            echo $cislo . " je vice nez 50";
+        }
+    }
+    ?>
+
+
+
 </body>
+
 </html>
