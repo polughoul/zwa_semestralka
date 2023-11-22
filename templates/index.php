@@ -32,11 +32,7 @@
                             </div>
                         </div>
                     </div>
-                    <div id="controls">
-                        <label for="switch1"></label>
-                        <label for="switch2"></label>
-                        <label for="switch3"></label>
-                    </div>
+
                     <div id="active">
                         <label for="switch1"></label>
                         <label for="switch2"></label>

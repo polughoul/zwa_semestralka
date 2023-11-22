@@ -11,7 +11,6 @@
 
 <body>
     <?php include('header.php'); ?>
-
     <main>
         <form class="login_form" action="/script_php/script_login.php" method="post">
             <h1 class="login_title_form">You can log in here</h1>
@@ -19,7 +18,7 @@
             <input class="login_input_form" type="text" id="nname" name="nname" required><br><br>
             <label class="login_label_form" for="password">Please enter a password:</label>
             <input class="login_input_form" type="password" id="password" name="password" required><br><br>
-            <input class="login_button_form" type="submit" value="Sign in"><br>
+            <input class="login_button_form" type="submit" value="Log in"><br>
         </form>
     </main>
     <script src="/script_js/script_login.js"></script>

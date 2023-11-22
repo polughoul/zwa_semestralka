@@ -27,11 +27,11 @@
                         <p class="name_psycho">prof. MUDr. Anna Novakova, Ph.D.</p>
                     </li>
                     <li class="pic_psycho_container">
-                        <img class="pic_psycho" src="https://www.ghc.cz/source/ezgif-3-cdb6d9319fvyrez.jpg">
+                        <img class="pic_psycho" src="https://www.ghc.cz/source/Vaško_neurolog.jpg">
                         <p class="name_psycho">MUDr. Petr Smid</p>
                     </li>
                     <li class="pic_psycho_container">
-                        <img class="pic_psycho" src="https://www.ghc.cz/source/ezgif-3-304f967209vyrez.jpg">
+                        <img class="pic_psycho" src="https://www.ghc.cz/source/brisuda_1200px.png">
                         <p class="name_psycho">MUDr. Tomáš Marek</p>
                     </li>
                     <li class="pic_psycho_container">
