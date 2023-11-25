@@ -18,14 +18,15 @@ body {
   gap: 1rem;
 }
 
-footer {
+.footer {
   background: black;
   text-align: center;
   font-size: large;
+  display: flex;
+  align-self: flex-end;
+  justify-content: center;
   padding: 10px;
   bottom: 0;
-  width: 100%;
-  position: fixed;
 }
 
 .text_psycho {
@@ -416,5 +417,6 @@ footer p {
 .header_img {
   width: 100px;
   height: 50px;
-  margin-right: 1000px;
+  margin-right: 50%;
+
 }

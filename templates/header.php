@@ -1,6 +1,6 @@
  <header class="header">
    <a href="index.php">MindfulCare</a>
-   <img class="header_img" src="brain.png">
+   <img class="header_img" src="/images/logo.png">
    <nav class="nav">
      <ul class="navList">
        <li>

@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/templates/reset.css" type="text/css">
-    <link rel="stylesheet" href="/templates/style.css" type="text/css">
+    <link rel="stylesheet" href="/styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Sign in</title>

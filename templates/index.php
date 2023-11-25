@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="/templates/reset.css" type="text/css">
-    <link rel="stylesheet" href="/templates/style.css" type="text/css">
+    <link rel="stylesheet" href="/styles/reset.css" type="text/css">
+    <link rel="stylesheet" href="/styles/style.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <meta charset="UTF-8">
     <title>Home</title>
@@ -26,9 +26,9 @@
                     <div id="slides">
                         <div id="overflow">
                             <div class="image">
-                                <article><img src="photo_2023-11-20_02-04-35.jpg"></article>
-                                <article><img src="photo_2023-11-20_02-04-35 (2).jpg"></article>
-                                <article><img src="photo_2023-11-20_02-04-36.jpg"></article>
+                                <article><img src="/images/slider_photo1.jpg"></article>
+                                <article><img src="/images/slider_photo2.jpg"></article>
+                                <article><img src="/images/slider_photo3.jpg"></article>
                             </div>
                         </div>
                     </div>
@@ -50,7 +50,7 @@
             </ul>
 
             <p class="text_home"><strong class="strong_red">We also now have an 80% discount for all Ukrainian refugees.</strong></p>
-            <p class="text_home">For any technical questions write to <strong class="strong_bold">mindfullcare@gmail.com</strong> or call to the number: <strong class="strong_bold">+420 723 448 753</strong></p>
+            <p class="text_home">For any technical questions write to <strong class="strong_bold"><a href="mailto:ADDRESS">mindfullcare@gmail.com</a></strong> or call to the number: <strong class="strong_bold"><a href="tel:+420723448753">+420 723 448 753</a></strong></p>
         </section>
     </main>
     <?php include('footer.php'); ?>
