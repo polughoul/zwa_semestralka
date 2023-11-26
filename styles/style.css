@@ -27,6 +27,7 @@ body {
   justify-content: center;
   padding: 10px;
   bottom: 0;
+  color: #fff;
 }
 
 .text_psycho {
@@ -261,6 +262,10 @@ a {
   border-radius: 3px;
 }
 
+.password-error {
+  color: red;
+}
+
 .login_input_form {
   width: 100%;
   padding: 10px;
@@ -408,10 +413,6 @@ a {
 
 .feedback_button_form:hover {
   background-color: #0056b3;
-}
-
-footer p {
-  color: #fff;
 }
 
 .header_img {

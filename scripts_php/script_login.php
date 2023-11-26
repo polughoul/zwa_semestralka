@@ -13,7 +13,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-function validateData($nname, $password) {
+function validateData($nname, $password)
+{
     // В этой функции нужно выполнить проверку введенных данных на сервере.
     // Примерно как в предыдущих ответах. Замените этот код на свою логику проверки.
 

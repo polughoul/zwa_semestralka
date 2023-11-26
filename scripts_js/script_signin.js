@@ -1,30 +1,51 @@
-// var form = document.getElementById("registration-form");
-// var nnameInput = document.getElementById("nname");
-// var passwordInput = document.getElementById("password");
-// var repasswordInput = document.getElementById("repassword");
-// var passwordError = document.getElementById("password-error");
-// var submitButton = document.getElementById("submit-button");
+document.addEventListener("DOMContentLoaded", function () {
+    const submitButton = document.getElementById("submit-button");
+    submitButton.addEventListener("click", function () {
+        const nickname = document.getElementById("nname").value;
+        const password = document.getElementById("password").value;
+        const repassword = document.getElementById("repassword").value;
 
-// // Добавляем слушатель события клика на кнопку "Sign in"
-// submitButton.addEventListener("click", function (event) {
-//     event.preventDefault(); // Предотвращаем отправку формы
+        if (!validateNickname(nickname)) {
+            return;
+        }
 
-//     // Получаем значения из полей
-//     var nname = nnameInput.value;
-//     var password = passwordInput.value;
-//     var repassword = repasswordInput.value;
+        if (!validatePassword(password, repassword)) {
+            return;
+        }
 
-//     // Проверка, что пароль и повтор пароля совпадают
-//     if (password !== repassword) {
-//         passwordError.innerHTML = "Password is not equal. Please try again!";
-//     } else if (password.length < 6) {
-//         passwordError.innerHTML = "Пароль должен содержать минимум 6 символов.";
-//     } else {
-//         passwordError.innerHTML = "";
+        const xhr = new XMLHttpRequest();
+        xhr.open("POST", "/scripts_php/script_signin.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                alert(xhr.responseText);
+            }
+        };
 
-//         // Если вы хотите добавить дополнительные проверки для никнейма и пароля, вы можете добавить их здесь.
+        if (password === "") {
+            alert("Create a password please");
+            return;
+        }
 
-//         // Если все проверки прошли успешно, можно выполнить отправку данных на сервер
-//         form.submit();
-//     }
-// });
+        xhr.send("nname=" + encodeURIComponent(nickname) + "&password=" + encodeURIComponent(password));
+    });
+
+    function validateNickname(nickname) {
+        const regex = /^[a-zA-Z0-9]+$/;
+        if (!regex.test(nickname)) {
+            alert("Nickname should contain only letters and numbers.");
+            return false;
+        }
+        return true;
+    }
+
+    function validatePassword(password, repassword) {
+        if (password !== repassword) {
+            document.getElementById("password-error").innerText = "Passwords do not match.";
+            return false;
+        } else {
+            document.getElementById("password-error").innerText = "";
+            return true;
+        }
+    }
+});
