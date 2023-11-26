@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <link rel="stylesheet" href="/styles/reset.css" type="text/css">
-    <link rel="stylesheet" href="/styles/style.css" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Home</title>
-</head>
-
-<body>
-    <?php include('header.php'); ?>
-    <main>
         <section class="section_home">
             <h1 class="title_home">Welcome to MindfulCare</h1>
             <p class="text_home">Welcome to the website of Mindfulcare organization. Our organization consists of highly qualified professionals from the Czech Republic.
@@ -52,8 +38,3 @@
             <p class="text_home"><strong class="strong_red">We also now have an 80% discount for all Ukrainian refugees.</strong></p>
             <p class="text_home">For any technical questions write to <strong class="strong_bold"><a href="mailto:ADDRESS">mindfullcare@gmail.com</a></strong> or call to the number: <strong class="strong_bold"><a href="tel:+420723448753">+420 723 448 753</a></strong></p>
         </section>
-    </main>
-    <?php include('footer.php'); ?>
-</body>
-
-</html>
